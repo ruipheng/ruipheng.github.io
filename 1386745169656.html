@@ -1,0 +1,16 @@
+<!DOCTYPE html ><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>从jQuery的ajax请求中删除X-Requested-With</title></head><body><p><span>X-Requested-With常用于判断是不是ajax请求</span><br /></p><p><span>但是有时我们会有需要删除<span>X-Requested-With的情况</span></span></p><p><span><span>下面介绍一种方式 js代码</span></span></p><p><span><span></span></span></p><pre config="brush:js;toolbar:false;">$.ajax({
+  url: 'http://www.zhangruifeng.com',
+  beforeSend: function( xhr ) {
+    xhr.setRequestHeader('X-Requested-With', {toString: function(){ return ''; }});
+  },
+  success: function( data ) {
+    if (console &amp;&amp; console.log){
+      console.log( 'Got data without the X-Requested-With header' );
+    }
+  }
+});</pre><p><span><span><br /></span></span></p><p><span><span>附,判断ajax请求的方式 java代码</span></span></p><p><span><span></span></span></p><pre config="brush:java;toolbar:false;">if (request.getHeader(&quot;x-requested-with&quot;) != null
+    &amp;&amp; request.getHeader(&quot;x-requested-with&quot;).equalsIgnoreCase(&quot;XMLHttpRequest&quot;)) {
+    //异步请求
+}else{ 
+     
+}</pre><p><span><span><br /></span></span></p><p><span><span><br /></span></span></p><p><span><span><br /></span></span></p><p><span><span><br /></span></span></p></body></html>
