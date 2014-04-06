@@ -46,6 +46,7 @@
 	-webkit-transition:background-position 1s;
 	-moz-transition:background-position 1s;
 	transition:background-position 1s;
+	color: rgb(28, 118, 214);
 }
 
 .button:hover{
@@ -84,14 +85,14 @@
 /* BlueButton */
 
 .blue.button{
-	color:#0f4b6d !important;
+	/*color:#0f4b6d !important;
 	
 	border:1px solid #84acc3 !important;
+	*/
+	/* A fallback background color
+	background-color: #48b5f2; */
 	
-	/* A fallback background color */
-	background-color: #48b5f2;
-	
-	/* Specifying a version with gradients according to */
+	/* Specifying a version with gradients according to 
 	
 	background-image:	url('button_bg.png'), url('button_bg.png'),
 						-moz-radial-gradient(	center bottom, circle,
@@ -101,7 +102,7 @@
 	background-image:	url('button_bg.png'), url('button_bg.png'),
 						-webkit-gradient(	radial, 50% 100%, 0, 50% 100%, 100,
 											from(rgba(89,208,244,1)), to(rgba(89,208,244,0))),
-						-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4fbbf7), to(#3faeeb));
+						-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4fbbf7), to(#3faeeb));*/
 }
 
 .blue.button:hover{
@@ -121,12 +122,14 @@
 /* Green Button */
 
 .green.button{
+/*
 	color:#345903 !important;
 	border:1px solid #96a37b !important;	
 	background-color: #79be1e;
 	
 	background-image:url('button_bg.png'), url('button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(162,211,30,1) 0,rgba(162,211,30,0) 100px),-moz-linear-gradient(#82cc27, #74b317);
 	background-image:url('button_bg.png'), url('button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(162,211,30,1)), to(rgba(162,211,30,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#82cc27), to(#74b317));
+	*/
 }
 
 .green.button:hover{
@@ -139,12 +142,14 @@
 /* Orange Button */
 
 .orange.button{
+/*
 	color:#693e0a !important;
 	border:1px solid #bea280 !important;	
 	background-color: #e38d27;
 	
 	background-image:url('button_bg.png'), url('button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(232,189,45,1) 0,rgba(232,189,45,0) 100px),-moz-linear-gradient(#f1982f, #d4821f);
 	background-image:url('button_bg.png'), url('button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(232,189,45,1)), to(rgba(232,189,45,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1982f), to(#d4821f));
+	*/
 }
 
 .orange.button:hover{
@@ -155,12 +160,14 @@
 }
 
 .gray.button{
+/*
 	color:#525252 !important;
 	border:1px solid #a5a5a5 !important;	
 	background-color: #a9adb1;
 	
 	background-image:url('button_bg.png'), url('button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(197,199,202,1) 0,rgba(197,199,202,0) 100px),-moz-linear-gradient(#c5c7ca, #92989c);
 	background-image:url('button_bg.png'), url('button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(197,199,202,1)), to(rgba(197,199,202,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#c5c7ca), to(#92989c));
+	*/
 }
 
 .gray.button:hover{
